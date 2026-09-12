@@ -1,0 +1,16 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "vstreat",
+  "compatibility_date": "2026-07-31",
+
+  // Static-only Worker: no `main`, the whole site is served from the build
+  // output. Set CLOUDFLARE_ACCOUNT_ID in the environment and add your own
+  // `routes` block if you want a custom domain.
+  "assets": {
+    "directory": "./dist"
+  },
+
+  "observability": {
+    "enabled": true
+  }
+}

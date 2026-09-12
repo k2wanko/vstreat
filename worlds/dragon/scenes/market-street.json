@@ -1,0 +1,12 @@
+{
+  "subject": "a market street in a small fantasy town, seen from the middle of the roadway",
+  "camera": "The camera stands in the middle of the roadway at eye level (1.6 m), on a street about eight metres wide between continuous rows of houses. The street runs straight away ahead and straight back behind.",
+  "bearings": {
+    "ahead": "the street running on and narrowing between three-storey timber-framed houses, dark oak framing on pale lime plaster, upper storeys jettied out over the street until the eaves nearly meet; further on it bends out of sight behind a house corner, with the steep wooded slopes of dark broadleaf trees beyond the roofs",
+    "right": "an unbroken frontage of house fronts in the light, shop boards let down on chains, cloth awnings in faded red and ochre over wooden trestles, baskets, barrels and sacks, a stone chimney above",
+    "behind": "the same street running back the other way and opening out into a cobbled square about forty metres across, the carved grey stone fountain small in the distance",
+    "left": "the shaded frontage opposite, plaster and dark oak framing, a water butt, firewood stacked against the wall, and a narrow gap between two houses where a back lane leaves the street",
+    "up": "a long strip of sky between the jettied upper storeys and the steep dark blue-grey slate roofs, moss along the eaves, crossed by one rope of small cloth banners",
+    "down": "worn grey granite cobbles with a shallow drainage channel down the middle, scattered straw and cabbage leaves"
+  }
+}

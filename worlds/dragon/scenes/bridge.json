@@ -1,0 +1,12 @@
+{
+  "subject": "an arched stone bridge over a river below a small fantasy town",
+  "camera": "The camera stands at eye level (1.6 m) in the middle of the bridge deck, above the water, looking south away from the town. The river runs away to both sides.",
+  "bearings": {
+    "ahead": "the road continuing off the far end of the bridge and into a smaller cluster of the same steep dark blue-grey slate roofs on the south bank, and a cart track leaving south between hedgerows",
+    "right": "the river running away downstream to the west, fast clear green water about twenty metres wide over pale stones, willows and reed beds along both banks, the water narrowing out of sight round a shoulder of the valley",
+    "behind": "the town on the north bank: the road climbing off the bridge between three-storey timber-framed houses to the cobbled square, packed slate roofs above them, and the steep wooded slopes of dark broadleaf trees rising behind the whole town",
+    "left": "the same river running away upstream to the east, the same twenty metres of fast clear green water over pale stones, grassy banks and a moored flat-bottomed boat, the water going out of sight between the trees",
+    "up": "open sky, wide and unobstructed as it is nowhere else in the town, with the iron lantern posts of the parapet standing against it",
+    "down": "the bridge deck: pale grey stone slabs worn smooth, the low parapets to either side, and the green water visible past them"
+  }
+}

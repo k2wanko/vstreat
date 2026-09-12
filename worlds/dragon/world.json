@@ -1,0 +1,43 @@
+{
+  "id": "dragon",
+  "label": "竜の街",
+  "startNodeId": "plaza",
+  "frameM": 1200,
+  "map": {
+    "image": "/worlds/dragon/map.jpg",
+    "width": 1200,
+    "height": 1200
+  },
+  "pipeline": {
+    "aerial": "/worlds/dragon/pipeline/aerial.jpg",
+    "overlay": "/worlds/dragon/pipeline/overlay.jpg",
+    "blockouts": "/worlds/dragon/pipeline/blockouts"
+  },
+  "terrain": {
+    "ridgeM": 90,
+    "ridgeFrom": "forest",
+    "terraceM": 7,
+    "terraceFrom": "river",
+    "river": {
+      "widthM": 22,
+      "depthM": 3
+    }
+  },
+  "light": {
+    "azDeg": 300,
+    "elDeg": 40,
+    "body": "sun",
+    "mood": "a warm late afternoon with long shadows"
+  },
+  "style": {
+    "outdoor": "Painterly high-detail fantasy concept art, warm late-afternoon golden sunlight, soft shadows, rich saturated colors, clean and readable, game environment art quality.",
+    "indoor": "Painterly high-detail fantasy concept art, warm interior lantern and firelight, cosy shadowed corners, rich saturated colors, game environment art quality."
+  },
+  "continuity": [
+    "exactly ONE light in the sky, the sun stated below. Every shadow in the picture falls directly away from it.",
+    "the river runs along the SOUTH side of the valley and the wooded ridge rises on the NORTH. They never appear in the same direction.",
+    "the river is crossed by exactly ONE bridge, a single-span arched bridge of pale grey stone. There is no ford and no second crossing.",
+    "the plaza holds exactly ONE fountain, a carved grey stone dragon spouting into a round basin, and it is the only fountain in the town.",
+    "every roof in the town is dark blue-grey slate at the same steep pitch."
+  ]
+}

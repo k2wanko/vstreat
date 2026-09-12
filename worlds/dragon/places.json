@@ -1,0 +1,132 @@
+[
+  {
+    "id": "plaza",
+    "name": "中央広場",
+    "caption": "金の竜亭通り · 中央広場",
+    "links": [
+      "market-street",
+      "alley",
+      "bridge"
+    ],
+    "site": {
+      "kind": "point",
+      "e": 30,
+      "n": 105,
+      "heading": 25
+    }
+  },
+  {
+    "id": "market-street",
+    "name": "市場通り",
+    "caption": "市場通り",
+    "links": [
+      "plaza",
+      "inn-entrance"
+    ],
+    "site": {
+      "kind": "point",
+      "e": 49,
+      "n": 153,
+      "heading": 55
+    }
+  },
+  {
+    "id": "alley",
+    "name": "裏路地",
+    "caption": "洗濯物の路地",
+    "links": [
+      "plaza",
+      "workshop"
+    ],
+    "site": {
+      "kind": "point",
+      "e": -63,
+      "n": 81,
+      "heading": 250
+    }
+  },
+  {
+    "id": "inn-entrance",
+    "name": "金の竜亭 前",
+    "caption": "金の竜亭 · 入口",
+    "links": [
+      "market-street",
+      "inn-taproom"
+    ],
+    "site": {
+      "kind": "point",
+      "e": 122,
+      "n": 139,
+      "heading": 100
+    }
+  },
+  {
+    "id": "bridge",
+    "name": "石橋",
+    "caption": "古い石橋",
+    "links": [
+      "plaza"
+    ],
+    "site": {
+      "kind": "point",
+      "e": 22,
+      "n": -140,
+      "heading": 180
+    }
+  },
+  {
+    "id": "inn-taproom",
+    "name": "金の竜亭 酒場",
+    "caption": "金の竜亭 · 1階 酒場",
+    "indoor": true,
+    "links": [
+      "inn-entrance",
+      "inn-room"
+    ],
+    "site": {
+      "kind": "indoor",
+      "host": "inn-entrance",
+      "offset": {
+        "e": 25,
+        "n": -8
+      },
+      "heading": 288
+    }
+  },
+  {
+    "id": "inn-room",
+    "name": "金の竜亭 客室",
+    "caption": "金の竜亭 · 2階 客室",
+    "indoor": true,
+    "links": [
+      "inn-taproom"
+    ],
+    "site": {
+      "kind": "indoor",
+      "host": "inn-entrance",
+      "offset": {
+        "e": 20,
+        "n": -11
+      },
+      "heading": 212
+    }
+  },
+  {
+    "id": "workshop",
+    "name": "鍛冶工房",
+    "caption": "路地裏の鍛冶工房",
+    "indoor": true,
+    "links": [
+      "alley"
+    ],
+    "site": {
+      "kind": "indoor",
+      "host": "alley",
+      "offset": {
+        "e": -32,
+        "n": -68
+      },
+      "heading": 90
+    }
+  }
+]

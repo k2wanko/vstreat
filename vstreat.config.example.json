@@ -1,0 +1,9 @@
+{
+  "imageGen": {
+    "command": "./adapters/codex.sh",
+    "args": [],
+    "env": {},
+    "timeoutMs": 600000,
+    "model": null
+  }
+}

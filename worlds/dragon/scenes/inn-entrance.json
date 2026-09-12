@@ -1,0 +1,13 @@
+{
+  "subject": "the gate of a coaching inn in a small fantasy town",
+  "camera": "The camera stands at eye level (1.6 m) in a gap between two tall buildings, on the cobbles in front of the inn's gate arch, looking east out of the town.",
+  "bearings": {
+    "ahead": "the way out of the town between the two buildings, cobbles giving way to a cart track, and beyond it hedgerows and cultivated fields in mid-green and yellow-green patchwork running away to the horizon",
+    "right": "the Golden Dragon rising close and high: a building half again as large as its neighbours, a gate arch through to an inner courtyard with a carved and painted dragon sign hanging from an iron bracket above it, steep dark blue-grey slate roof over pale lime plaster and dark oak framing",
+    "behind": "the market street running back into the town between three-storey timber-framed houses, upper storeys jettied out over the street",
+    "left": "the end wall of the house opposite the inn, in shadow, a stable door and a mounting block, a cart with its shafts down",
+    "up": "sky in the slot between the two buildings, the inn's eaves and stone chimneys on one side and the neighbour's slate on the other",
+    "down": "worn grey granite cobbles rutted by cart wheels, straw trodden in near the gate arch"
+  },
+  "allowText": "the inn's hanging sign may carry the words GOLDEN DRAGON in a medieval painted script; nothing else in the image carries lettering"
+}

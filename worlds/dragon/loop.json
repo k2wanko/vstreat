@@ -1,0 +1,94 @@
+[
+  {
+    "nodeId": "plaza",
+    "yaw": -31,
+    "pitch": -18,
+    "holdMs": 4500,
+    "panTo": {
+      "yaw": 70,
+      "durationMs": 4500
+    }
+  },
+  {
+    "nodeId": "market-street",
+    "yaw": -56,
+    "pitch": -18,
+    "holdMs": 7000
+  },
+  {
+    "nodeId": "inn-entrance",
+    "yaw": -36,
+    "pitch": 0,
+    "holdMs": 4500
+  },
+  {
+    "nodeId": "inn-taproom",
+    "yaw": 97,
+    "pitch": -20,
+    "holdMs": 8000
+  },
+  {
+    "nodeId": "inn-room",
+    "yaw": -29,
+    "pitch": -22,
+    "holdMs": 5500
+  },
+  {
+    "nodeId": "inn-taproom",
+    "yaw": -36,
+    "pitch": 0,
+    "holdMs": 1800
+  },
+  {
+    "nodeId": "inn-entrance",
+    "yaw": 72,
+    "pitch": 0,
+    "holdMs": 1500
+  },
+  {
+    "nodeId": "market-street",
+    "yaw": -100,
+    "pitch": 0,
+    "holdMs": 1500
+  },
+  {
+    "nodeId": "plaza",
+    "yaw": -83,
+    "pitch": 0,
+    "holdMs": 1500
+  },
+  {
+    "nodeId": "alley",
+    "yaw": 65,
+    "pitch": -2,
+    "holdMs": 4500
+  },
+  {
+    "nodeId": "workshop",
+    "yaw": 49,
+    "pitch": -20,
+    "holdMs": 7000
+  },
+  {
+    "nodeId": "alley",
+    "yaw": -126,
+    "pitch": 0,
+    "holdMs": 1500
+  },
+  {
+    "nodeId": "plaza",
+    "yaw": 137,
+    "pitch": 0,
+    "holdMs": 1200
+  },
+  {
+    "nodeId": "bridge",
+    "yaw": 0,
+    "pitch": 0,
+    "holdMs": 2500,
+    "panTo": {
+      "yaw": 90,
+      "durationMs": 4000
+    }
+  }
+]

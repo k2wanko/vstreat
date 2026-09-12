@@ -1,0 +1,42 @@
+[
+  {
+    "id": "bard",
+    "nodeId": "plaza",
+    "name": "吟遊詩人",
+    "line": "竜の街へようこそ。一曲どうだい？",
+    "at": 0.63,
+    "pitch": -0.58
+  },
+  {
+    "id": "merchant",
+    "nodeId": "market-street",
+    "name": "市場の商人",
+    "line": "今日の野菜は竜の谷から届いたよ",
+    "at": 0.77,
+    "pitch": -0.56
+  },
+  {
+    "id": "innkeeper",
+    "nodeId": "inn-taproom",
+    "name": "金の竜亭の店主",
+    "line": "部屋は空いてる。エールはどうだ？",
+    "at": 0.9,
+    "pitch": -0.6
+  },
+  {
+    "id": "traveler",
+    "nodeId": "inn-room",
+    "name": "旅人",
+    "line": "明日は橋を渡って東へ行く",
+    "at": 0.63,
+    "pitch": -0.62
+  },
+  {
+    "id": "blacksmith",
+    "nodeId": "workshop",
+    "name": "鍛冶屋",
+    "line": "注文があれば言ってくれ",
+    "at": 0.57,
+    "pitch": -0.6
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "plaza": {
+    "at": {
+      "e": 30,
+      "n": 105
+    },
+    "heading": 25
+  },
+  "market-street": {
+    "at": {
+      "e": 49,
+      "n": 153
+    },
+    "heading": 55
+  },
+  "alley": {
+    "at": {
+      "e": -63,
+      "n": 81
+    },
+    "heading": 250
+  },
+  "inn-entrance": {
+    "at": {
+      "e": 122,
+      "n": 139
+    },
+    "heading": 100
+  },
+  "bridge": {
+    "at": {
+      "e": 22,
+      "n": -140
+    },
+    "heading": 180
+  },
+  "inn-taproom": {
+    "at": {
+      "e": 147,
+      "n": 131
+    },
+    "heading": 288
+  },
+  "inn-room": {
+    "at": {
+      "e": 142,
+      "n": 128
+    },
+    "heading": 212
+  },
+  "workshop": {
+    "at": {
+      "e": -95,
+      "n": 13
+    },
+    "heading": 90
+  }
+}
