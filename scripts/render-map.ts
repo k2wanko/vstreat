@@ -10,6 +10,7 @@
  */
 import { mkdir } from 'node:fs/promises';
 import sharp from 'sharp';
+import { existsSync } from 'node:fs';
 import { stationsFor } from './stations.ts';
 import { paths, terrainOf } from './lib/worlds.ts';
 import { buildWorld, cellOf, CELL, CLASS, COLOUR, N } from './terrain.ts';
@@ -28,7 +29,11 @@ const SIZE = N * SCALE;
 const SUN = { az: (315 * Math.PI) / 180, el: (42 * Math.PI) / 180 };
 
 const world = buildWorld(worldId);
-const STATIONS = stationsFor(worldId);
+// Sites are declared after the terrain is checked (AGENTS.md 4.4 comes before
+// 4.5), so there is often no places.json yet - the class-area report below is
+// exactly what that step is for. Stations only show up once they exist.
+const sited = existsSync(paths(worldId).dir + '/places.json');
+const STATIONS = sited ? stationsFor(worldId) : {};
 const { height, cls } = world;
 
 const px = new Uint8ClampedArray(SIZE * SIZE * 3);
@@ -96,7 +101,6 @@ for (const [, p] of clean ? [] : Object.entries(STATIONS)) {
   }
 }
 
-await mkdir('raw', { recursive: true });
 const out = clean ? paths(worldId).map : `${paths(worldId).raw}/world.png`;
 await mkdir(out.slice(0, out.lastIndexOf('/')), { recursive: true });
 const image = sharp(Buffer.from(px.buffer), { raw: { width: SIZE, height: SIZE, channels: 3 } });
@@ -107,6 +111,7 @@ for (const c of cls) counts.set(c, (counts.get(c) ?? 0) + 1);
 const area = (c: number) => (((counts.get(c) ?? 0) * CELL * CELL) / 10000).toFixed(1);
 console.log(`grid ${N}x${N} @ ${CELL} m   ridge declared ${terrainOf(worldId).ridgeM} m, built ${world.maxHeight.toFixed(0)} m`);
 for (const [name, id] of Object.entries(CLASS)) console.log(`  ${name.padEnd(9)} ${area(id).padStart(6)} ha`);
+if (!sited) console.log(`  (no places.json yet - site the places, then re-run this to check where each station stands)`);
 for (const [name, p] of Object.entries(STATIONS)) {
   const { i, j } = cellOf(p.e, p.n);
   const c = Object.entries(CLASS).find(([, v]) => v === cls[j * N + i])?.[0];

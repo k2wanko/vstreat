@@ -117,4 +117,16 @@ export function loadWorld(id: string): World {
   });
 }
 
-export const WORLDS: World[] = worldIds().map(loadWorld);
+// A town under construction has a world.json before it has places.json or
+// survey.json - AGENTS.md's own method creates them in that order. worldIds()
+// still lists it (useful in an error naming every directory that exists), but
+// nothing tries to build a World out of it until it is ready.
+function isReady(id: string): boolean {
+  return existsSync(new URL(`${id}/places.json`, ROOT)) && existsSync(new URL(`${id}/survey.json`, ROOT));
+}
+
+export function readyWorldIds(): string[] {
+  return worldIds().filter(isReady);
+}
+
+export const WORLDS: World[] = readyWorldIds().map(loadWorld);

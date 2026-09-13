@@ -34,4 +34,11 @@ function world(id: string): World {
   return worldFromData({ manifest: MANIFESTS[id], places: PLACES[id], survey: SURVEYS[id], scenes: SCENES[id] });
 }
 
-export const WORLDS: World[] = Object.keys(MANIFESTS).sort().map(world);
+// A town under construction has a world.json before it has places.json or
+// survey.json - AGENTS.md's own method creates them in that order - so it is
+// left out of the switcher rather than crashing everyone else's.
+const readyIds = Object.keys(MANIFESTS)
+  .filter((id) => id in PLACES && id in SURVEYS)
+  .sort();
+
+export const WORLDS: World[] = readyIds.map(world);
